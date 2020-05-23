@@ -22,7 +22,7 @@ func (l *TCPListener) Accept() (c net.Conn, err error) {
 		return
 	}
 
-	// TODO(brutella) Check if we should use tcp keepalive
+	// TODO(jgulick48) Check if we should use tcp keepalive
 	// conn.SetKeepAlive(true)
 	// conn.SetKeepAlivePeriod(3 * time.Minute)
 	hapConn := NewConnection(conn, l.context)

@@ -1,8 +1,8 @@
 package rtp
 
 import (
-	"github.com/brutella/hc/characteristic"
-	"github.com/brutella/hc/tlv8"
+	"github.com/jgulick48/hc/characteristic"
+	"github.com/jgulick48/hc/tlv8"
 	"testing"
 )
 

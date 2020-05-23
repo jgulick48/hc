@@ -2,7 +2,7 @@ package golang
 
 import (
 	"bytes"
-	"github.com/brutella/hc/gen"
+	"github.com/jgulick48/hc/gen"
 	"text/template"
 )
 

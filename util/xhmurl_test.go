@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/brutella/hc/accessory"
+	"github.com/jgulick48/hc/accessory"
 	"testing"
 )
 

@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"encoding/hex"
 	"fmt"
-	"github.com/brutella/hc/crypto"
-	"github.com/brutella/hc/crypto/chacha20poly1305"
-	"github.com/brutella/hc/db"
-	"github.com/brutella/hc/hap"
-	"github.com/brutella/hc/log"
-	"github.com/brutella/hc/util"
+	"github.com/jgulick48/hc/crypto"
+	"github.com/jgulick48/hc/crypto/chacha20poly1305"
+	"github.com/jgulick48/hc/db"
+	"github.com/jgulick48/hc/hap"
+	"github.com/jgulick48/hc/log"
+	"github.com/jgulick48/hc/util"
 )
 
 // VerifyServerController verifies the stored client public key and negotiates a shared secret

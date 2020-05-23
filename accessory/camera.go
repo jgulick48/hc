@@ -1,7 +1,7 @@
 package accessory
 
 import (
-	"github.com/brutella/hc/service"
+	"github.com/jgulick48/hc/service"
 )
 
 // Camera provides RTP video streaming.

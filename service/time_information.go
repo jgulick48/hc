@@ -2,7 +2,7 @@
 package service
 
 import (
-	"github.com/brutella/hc/characteristic"
+	"github.com/jgulick48/hc/characteristic"
 )
 
 const TypeTimeInformation = "99"

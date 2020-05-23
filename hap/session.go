@@ -1,7 +1,7 @@
 package hap
 
 import (
-	"github.com/brutella/hc/crypto"
+	"github.com/jgulick48/hc/crypto"
 	"net"
 )
 

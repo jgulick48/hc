@@ -10,15 +10,17 @@ import (
 	"sync"
 
 	"github.com/brutella/dnssd"
-	"github.com/brutella/hc/accessory"
-	"github.com/brutella/hc/characteristic"
-	"github.com/brutella/hc/db"
-	"github.com/brutella/hc/event"
-	"github.com/brutella/hc/hap"
-	"github.com/brutella/hc/hap/endpoint"
-	"github.com/brutella/hc/hap/http"
-	"github.com/brutella/hc/log"
-	"github.com/brutella/hc/util"
+
+	"github.com/jgulick48/hc/accessory"
+	"github.com/jgulick48/hc/characteristic"
+	"github.com/jgulick48/hc/db"
+	"github.com/jgulick48/hc/event"
+	"github.com/jgulick48/hc/hap"
+	"github.com/jgulick48/hc/hap/endpoint"
+	"github.com/jgulick48/hc/hap/http"
+	"github.com/jgulick48/hc/log"
+	"github.com/jgulick48/hc/util"
+
 	"github.com/xiam/to"
 )
 
@@ -299,7 +301,7 @@ func (t *ipTransport) Handle(ev interface{}) {
 }
 
 func newService(config *Config) dnssd.Service {
-	// 2016-03-14(brutella): Replace whitespaces (" ") from service name
+	// 2016-03-14(jgulick48): Replace whitespaces (" ") from service name
 	// with underscores ("_")to fix invalid http host header field value
 	// produces by iOS.
 	//

@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/brutella/hc/db"
-	"github.com/brutella/hc/hap"
-	"github.com/brutella/hc/hap/pair"
-	"github.com/brutella/hc/log"
+	"github.com/jgulick48/hc/db"
+	"github.com/jgulick48/hc/hap"
+	"github.com/jgulick48/hc/hap/pair"
+	"github.com/jgulick48/hc/log"
 	"io"
 	"net/http"
 )

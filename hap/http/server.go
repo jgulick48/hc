@@ -1,14 +1,14 @@
 package http
 
 import (
-	"github.com/brutella/hc/accessory"
-	"github.com/brutella/hc/db"
-	"github.com/brutella/hc/event"
-	"github.com/brutella/hc/hap"
-	"github.com/brutella/hc/hap/controller"
-	"github.com/brutella/hc/hap/endpoint"
-	"github.com/brutella/hc/hap/pair"
-	"github.com/brutella/hc/log"
+	"github.com/jgulick48/hc/accessory"
+	"github.com/jgulick48/hc/db"
+	"github.com/jgulick48/hc/event"
+	"github.com/jgulick48/hc/hap"
+	"github.com/jgulick48/hc/hap/controller"
+	"github.com/jgulick48/hc/hap/endpoint"
+	"github.com/jgulick48/hc/hap/pair"
+	"github.com/jgulick48/hc/log"
 
 	"context"
 	"net"

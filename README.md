@@ -11,10 +11,10 @@ You can focus on implementing the business logic for your accessory, without hav
 Here are some projects which use `hc`.
 
 - [hkknx](https://hochgatterer.me/hkknx)
-- [hkcam](https://github.com/brutella/hkcam)
-- [hklifx](https://github.com/brutella/hklifx/)
-- [hkuvr](https://github.com/brutella/hkuvr)
-- [hksymo](https://github.com/brutella/hksymo)
+- [hkcam](https://github.com/jgulick48/hkcam)
+- [hklifx](https://github.com/jgulick48/hklifx/)
+- [hkuvr](https://github.com/jgulick48/hkuvr)
+- [hksymo](https://github.com/jgulick48/hksymo)
 
 **What is HomeKit?**
 
@@ -31,29 +31,29 @@ Checkout the official [website][home+].
 
 [home+]: https://hochgatterer.me/home/
 [home-appstore]: http://itunes.apple.com/app/id995994352
-[GoDoc]: https://godoc.org/github.com/brutella/hc
-[GoDoc Widget]: https://godoc.org/github.com/brutella/hc?status.svg
-[Travis]: https://travis-ci.org/brutella/hc
-[Travis Widget]: https://travis-ci.org/brutella/hc.svg
+[GoDoc]: https://godoc.org/github.com/jgulick48/hc
+[GoDoc Widget]: https://godoc.org/github.com/jgulick48/hc?status.svg
+[Travis]: https://travis-ci.org/jgulick48/hc
+[Travis Widget]: https://travis-ci.org/jgulick48/hc.svg
 
 ## Features
 
 - Supports Go modules (requires Go 1.13)
 - Full implementation of the HAP in Go
 - Supports all HomeKit [services and characteristics](service/README.md)
-- Built-in service announcement via DNS-SD using [dnssd](http://github.com/brutella/dnssd)
+- Built-in service announcement via DNS-SD using [dnssd](http://github.com/jgulick48/dnssd)
 - Runs on linux and macOS
-- Documentation: http://godoc.org/github.com/brutella/hc
+- Documentation: http://godoc.org/github.com/jgulick48/hc
 
 ## Getting Started
 
 1. [Install](http://golang.org/doc/install) and [set up](http://golang.org/doc/code.html#Organization) Go
-2. Create your own HomeKit accessory or clone an existing one (e.g.  [hklight](https://github.com/brutella/hklight))
+2. Create your own HomeKit accessory or clone an existing one (e.g.  [hklight](https://github.com/jgulick48/hklight))
 
         cd $GOPATH/src
         
         # Clone project
-        git clone https://github.com/brutella/hklight && cd hklight
+        git clone https://github.com/jgulick48/hklight && cd hklight
         
         # Run the project
         make run
@@ -78,8 +78,8 @@ package main
 
 import (
     "log"
-    "github.com/brutella/hc"
-    "github.com/brutella/hc/accessory"
+    "github.com/jgulick48/hc"
+    "github.com/jgulick48/hc/accessory"
 )
 
 func main() {
@@ -156,7 +156,7 @@ Once the bridge was added, the other accessories appear automatically.
 HomeKit requires that every accessory has a unique id, which must not change between system restarts.
 `hc` automatically assigns the ids for you based on the order in which the accessories are added to the bridge.
 
-But I recommend that you specify the accessory id yourself, via the [accessory.Config.ID](https://github.com/brutella/hc/blob/master/accessory/accessory.go#L13) field, like this.
+But I recommend that you specify the accessory id yourself, via the [accessory.Config.ID](https://github.com/jgulick48/hc/blob/master/accessory/accessory.go#L13) field, like this.
 
 ```go
 bridge := accessory.NewBridge(accessory.Info{Name: "Bridge", ID: 1})
@@ -183,9 +183,9 @@ Matthias Hochgatterer
 
 Website: [https://hochgatterer.me](https://hochgatterer.me)
 
-Github: [https://github.com/brutella](https://github.com/brutella/)
+Github: [https://github.com/jgulick48](https://github.com/jgulick48/)
 
-Twitter: [https://twitter.com/brutella](https://twitter.com/brutella)
+Twitter: [https://twitter.com/jgulick48](https://twitter.com/jgulick48)
 
 
 # License

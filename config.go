@@ -8,7 +8,7 @@ import (
 	"net"
 	"reflect"
 
-	"github.com/brutella/hc/util"
+	"github.com/jgulick48/hc/util"
 	"github.com/xiam/to"
 )
 
