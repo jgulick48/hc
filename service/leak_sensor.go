@@ -11,6 +11,7 @@ type LeakSensor struct {
 	*Service
 
 	LeakDetected *characteristic.LeakDetected
+	WaterLevel   *characteristic.WaterLevel
 }
 
 func NewLeakSensor() *LeakSensor {
@@ -19,6 +20,8 @@ func NewLeakSensor() *LeakSensor {
 
 	svc.LeakDetected = characteristic.NewLeakDetected()
 	svc.AddCharacteristic(svc.LeakDetected.Characteristic)
+	svc.WaterLevel = characteristic.NewWaterLevel()
+	svc.AddCharacteristic(svc.WaterLevel.Characteristic)
 
 	return &svc
 }
