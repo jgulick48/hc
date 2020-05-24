@@ -10,11 +10,13 @@ const TypeThermostat = "4A"
 type Thermostat struct {
 	*Service
 
-	CurrentHeatingCoolingState *characteristic.CurrentHeatingCoolingState
-	TargetHeatingCoolingState  *characteristic.TargetHeatingCoolingState
-	CurrentTemperature         *characteristic.CurrentTemperature
-	TargetTemperature          *characteristic.TargetTemperature
-	TemperatureDisplayUnits    *characteristic.TemperatureDisplayUnits
+	CurrentHeatingCoolingState  *characteristic.CurrentHeatingCoolingState
+	TargetHeatingCoolingState   *characteristic.TargetHeatingCoolingState
+	CurrentTemperature          *characteristic.CurrentTemperature
+	TargetTemperature           *characteristic.TargetTemperature
+	TemperatureDisplayUnits     *characteristic.TemperatureDisplayUnits
+	CoolingThresholdTemperature *characteristic.CoolingThresholdTemperature
+	HeatingThresholdTemperature *characteristic.HeatingThresholdTemperature
 }
 
 func NewThermostat() *Thermostat {
@@ -35,6 +37,12 @@ func NewThermostat() *Thermostat {
 
 	svc.TemperatureDisplayUnits = characteristic.NewTemperatureDisplayUnits()
 	svc.AddCharacteristic(svc.TemperatureDisplayUnits.Characteristic)
+
+	svc.CoolingThresholdTemperature = characteristic.NewCoolingThresholdTemperature()
+	svc.AddCharacteristic(svc.CoolingThresholdTemperature.Characteristic)
+
+	svc.HeatingThresholdTemperature = characteristic.NewHeatingThresholdTemperature()
+	svc.AddCharacteristic(svc.HeatingThresholdTemperature.Characteristic)
 
 	return &svc
 }
