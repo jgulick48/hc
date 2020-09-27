@@ -12,7 +12,7 @@ type Battery struct {
 // NewSwitch returns a switch which implements model.Switch.
 func NewBattery(info Info) *Battery {
 	acc := Battery{}
-	acc.Accessory = New(info, TypeSwitch)
+	acc.Accessory = New(info, TypeSensor)
 	acc.Battery = service.NewBatteryService()
 	acc.AddService(acc.Battery.Service)
 
