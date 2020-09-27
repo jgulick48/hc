@@ -16,8 +16,11 @@ func NewSwitch(info Info) *Switch {
 	acc.Accessory = New(info, TypeSwitch)
 	acc.Switch = service.NewSwitch()
 	acc.AddService(acc.Switch.Service)
-	acc.Battery = service.NewBatteryService()
-	acc.AddService(acc.Battery.Service)
 
 	return &acc
+}
+
+func (s *Switch) AddBatteryLevel() {
+	s.Battery = service.NewBatteryService()
+	s.AddService(s.Battery.Service)
 }
